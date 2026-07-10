@@ -25,7 +25,7 @@ class Settings:
     )
     phonepe_webhook_secret: str = os.getenv("PHONEPE_WEBHOOK_SECRET", "")
     payment_expiry_minutes: int = int(os.getenv("PAYMENT_EXPIRY_MINUTES", "15"))
-    database_url: str = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:Himanshu%401@localhost:5432/inventory_db")
+    database_url: str = os.getenv("DATABASE_URL", "postgresql://inventory_a64m_user:0rvU2Okz9BPqIRlJryqfR4JusdQUJ5mu@dpg-d98a1m67r5hc73coh1og-a.oregon-postgres.render.com/inventory_a64m")
     app_secret_key: str = os.getenv("APP_SECRET_KEY", "change-this-secret-in-production")
     cors_origins: list[str] = field(
         default_factory=lambda: [
